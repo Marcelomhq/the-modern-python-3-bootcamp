@@ -6,9 +6,11 @@
 
 # print_users : prints out all of the first and last names in the users.csv file
 import csv
-
+import os
 def print_users():
-    with open("ex1.csv") as csvfile:
+    file_path = os.path.abspath("user.csv")
+    print(file_path)
+    with open("user.csv") as csvfile:
         csv_reader = csv.DictReader(csvfile)
         for row in csv_reader:
             print(f"{row['First Name']} {row['Last Name']}")
