@@ -1,0 +1,13 @@
+1 - cd - move to a directory
+2 - ls - list everything on a folder
+3 - PWD - shows where i am, in which folder
+3 - mkdir - make a folder where u are
+4 - touch - create a file UTF -8 (had to change some rules of execution to make it work such as set-executionpolicy remotesigned, using this website too https://learn.microsoft.com/en-ca/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4#managing-the-execution-policy-with-powershell
+4.1 - New-Item -ItemType file "name.txt" - also works if u dont add the script exclusion)
+
+DELETES COMPLETELY, CAN RECOVER
+5 - rm - remove file
+6 - rm -r - fo - remove folder BE CAREFUL !!!!!!
+DELETES COMPLETELY, CAN RECOVER
+
+
