@@ -26,5 +26,5 @@ def update_user(first_name, last_name, new_first, new_last):
     return users_updated
 
 
-print(update_user("First Name", "Last","Marcelo","Queiroga"))
+print(update_user("Marcelo","Queiroga","Marc","Honorato"))
     
