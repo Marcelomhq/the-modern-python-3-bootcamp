@@ -8,7 +8,7 @@ import os
 if __name__ == '__main__':
     print("Welcome to my amazing game, lets start it (this is definetely not useless xdd)!!!!")
     while True:    
-        menu1 = int(input("You options are: \n1 - Do you want to scrap the website\n2 - Start the quote guessing game?\n"))
+        menu1 = int(input("You options are: \n1 - Start the quote guessing game\n2 - Do you want to scrap the website?\n"))
         sleep(1)
         match menu1:
             case 2:
@@ -18,6 +18,7 @@ if __name__ == '__main__':
                 print(
                     "Quote Guessing game. \nRules: We will provide you with a quote and you will have a total of 4 guesses to find out who said.\nWith each incorrect answer we'll provide with with a little bit more info about this person. GOOD LUCK!!!\n"
                 )
+                input()
                 random_quote = rand_quote()     
                 quote = random_quote['Quote']        
                 author = random_quote['Author']

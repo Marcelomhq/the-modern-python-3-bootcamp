@@ -3,7 +3,6 @@ from time import sleep
 import os
 
 def checking_author(guess,author):
-    print(guess.title())
     if guess.title() == author:
         return True
     
@@ -12,7 +11,7 @@ def guessing_game(quote,author,bio_link):
     os.system('cls')
     print(f"Here is the quote:\n '{quote}'")
     sleep(1)
-    guess = input("Who said the quote above? PS: you have to type all the spaces or special character in it's name.\n")
+    guess = input("Who said the quote above? PS: you have to type all the spaces or special character in it's name.")
     
     if checking_author(guess,author):
         return f"YOU ARE CORRECT, the author is {guess.capitalize()}"
@@ -23,7 +22,6 @@ def guessing_game(quote,author,bio_link):
     print('But now lets me give you a bit more info.')
     sleep(1)
     print(bio_link)
-    print(author)
     guess = input("It's you turn again, who said that quote. \n")
 
     if checking_author(guess,author):
