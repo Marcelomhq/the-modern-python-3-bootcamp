@@ -32,6 +32,7 @@ def menu_1():
         new_prod = input(
             "I'm sorry, it seems that you typed something that our system doesn't allow for names.\nOur system only allows name that include letters and numbers as name.\nPlease Try again: "
             )
+        
     #check if product is already on the system
     
     new_prod = Product(name = new_prod[0].upper()+new_prod[1:])
